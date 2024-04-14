@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to left, #879AF2, #D3208B, #FDA000);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 200px;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #D3208B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b70c72;
+}
+
+#resultado {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.instructions {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.options-dropdown {
+    margin-top: 20px;
+}
+
+.options-button {
+    padding: 8px 16px;
+    background-color: #D3208B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.options-button:hover {
+    background-color: #b70c72;
+}
+
+.options-list {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option-button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.option-button:hover {
+    background-color: #e0e0e0;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.options button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #D3208B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.options button:hover {
+    background-color: #b70c72;
+}
+
+.options button#borrarBtn {
+    margin-top: 10px;
+    background-color: #D3208B;
+}
+
+.options button#borrarBtn:hover {
+    background-color: #FDA000;
+}
+
+.historial {
+    margin-top: 20px;
+}
+
+.historial h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#historialList {
+    padding-left: 20px;
+}
+
+#historialList li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.historial {
+    margin-top: 20px;
+}
+
+.calculo {
+    margin-bottom: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar ul li {
+        float: none;
+    }
+}
+
+#container3D canvas {
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

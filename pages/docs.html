@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/7f337c1dde.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-calculator"></i> Calculadora</a></li>
+            <li><a href="docs.html" class="active"><i class="fas fa-book"></i> Documentación</a></li>
+            <li><a href="manual.html"><i class="fas fa-user"></i> Manual del usuario</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1> | Documentación |</h1>
+        
+        <h1>Análisis</h1>
+
+<p>El objetivo principal del programa es proporcionar una herramienta para el cálculo de propiedades geométricas de diferentes figuras, como triángulos, cuadrados, rectángulos, rombos y trapecios. Para ello, se requiere la entrada de medidas de los lados de estas figuras y se realizan cálculos para determinar áreas, perímetros y otras características relevantes.</p>
+
+<h2>Diseño de Sistema</h2>
+
+<p>El programa consta de dos archivos principales: index.html y script.js. Además, utiliza un módulo shapes.js para la definición y dibujo de las figuras geométricas.</p>
+
+<ul>
+    <li><strong>index.html:</strong> Contiene la estructura HTML de la interfaz de usuario, incluyendo formularios para la entrada de datos, secciones para mostrar resultados y opciones adicionales, así como elementos para la visualización de figuras en un lienzo 3D.</li>
+    <li><strong>script.js:</strong> Este archivo contiene la lógica principal del programa. Maneja la interacción del usuario, realiza cálculos basados en los datos de entrada y actualiza la interfaz de usuario con los resultados. También gestiona eventos como el envío del formulario, el borrado de datos y la activación de opciones adicionales.</li>
+    <li><strong>shapes.js:</strong> Define funciones para dibujar diferentes figuras geométricas utilizando la biblioteca D3.js. Estas funciones son importadas y utilizadas en el archivo script.js para visualizar las figuras en el lienzo.</li>
+</ul>
+
+<h2>Diseño de Algoritmos</h2>
+
+<p>El programa utiliza algoritmos para realizar los siguientes procesos:</p>
+
+<ul>
+    <li><strong>Validación de datos de entrada:</strong> Verifica si los datos ingresados por el usuario son números válidos y si forman lados de un triángulo válido.</li>
+    <li><strong>Cálculo de propiedades de las figuras:</strong> Calcula áreas, perímetros y otras características de las figuras geométricas basadas en los datos de entrada.</li>
+    <li><strong>Ordenamiento y cálculos estadísticos:</strong> Realiza ordenamientos y cálculos estadísticos sobre las áreas y perímetros de las figuras calculadas, como el cálculo del promedio y la mediana.</li>
+</ul>
+
+<h3>Algoritmo de Ordenamiento</h3>
+
+<p>El programa utiliza el método sort() de JavaScript para ordenar arrays de números. Este método implementa un algoritmo de ordenamiento QuickSort en la mayoría de los navegadores modernos. QuickSort es un algoritmo de ordenamiento recursivo eficiente que divide el array en subarrays más pequeños y los ordena de forma recursiva.</p>
+
+<p><strong>Funcionamiento del Algoritmo:</strong> QuickSort selecciona un elemento como pivote y particiona el array en dos subarrays: uno con elementos menores que el pivote y otro con elementos mayores. Luego, aplica el mismo proceso de manera recursiva a los subarrays hasta que todo el array esté ordenado.</p>
+
+<p><strong>Complejidad Temporal:</strong> En el caso promedio, QuickSort tiene una complejidad temporal de O(n log n), donde n es el número de elementos en el array. En el peor caso, puede tener una complejidad temporal de O(n^2), pero esto es poco probable en la práctica.</p>
+
+<p><strong>Complejidad Espacial:</strong> QuickSort tiene una complejidad espacial de O(log n) en el caso promedio debido a la recursión.</p>
+
+<h3>Algoritmo de Búsqueda</h3>
+
+<p>El programa no utiliza un algoritmo de búsqueda específico, ya que no hay necesidad de buscar elementos en grandes conjuntos de datos. Sin embargo, se realizan algunas comparaciones durante la validación de datos y cálculos, pero estas operaciones son de complejidad O(1) o O(n) en el peor caso, dependiendo del contexto.</p>
+
+<h3>Validación de Datos:</h3>
+
+<p>Para validar si los valores ingresados por el usuario son números válidos, el programa utiliza la función parseFloat() para convertir los valores de entrada en números decimales. Esta operación es de complejidad O(1), ya que implica una conversión simple y no depende del tamaño de los datos de entrada.</p>
+
+<p>Para verificar si los valores forman lados de un triángulo válido, el programa realiza comparaciones entre los lados ingresados para asegurarse de que cumplan con la desigualdad triangular. Esta comparación implica sumar y comparar los lados, lo cual también es de complejidad O(1) ya que implica operaciones simples y no depende del tamaño de los datos de entrada.</p>
+
+<h3>Cálculos:</h3>
+
+<p>Durante los cálculos para determinar propiedades de las figuras geométricas, se pueden realizar comparaciones para identificar el tipo de figura y seleccionar la fórmula adecuada. Por ejemplo, se comparan los valores de los lados de un triángulo para determinar si es equilátero, isósceles o escaleno. Estas comparaciones son de complejidad O(1) ya que implican operaciones simples de comparación y no dependen del tamaño de los datos de entrada.</p>
+
+<p>Además, durante los cálculos de ordenamiento y estadísticas sobre las áreas y perímetros de las figuras, se pueden realizar comparaciones para ordenar los datos o encontrar valores específicos, como el máximo o mínimo. Estas comparaciones pueden ser de complejidad O(n) en el peor caso, donde n es el número de elementos en el conjunto de datos, ya que pueden requerir recorrer todos los elementos una vez.</p>
+
+<h3>Función Iterativa y Recursiva</h3>
+
+<p>El programa incluye funciones tanto iterativas como recursivas para realizar cálculos y operaciones sobre datos.</p>
+
+<p><strong>Función Iterativa:</strong> La función iterativa realiza un bucle a través de los datos y ejecuta una serie de instrucciones en cada iteración hasta que se alcanza el resultado deseado. Este enfoque es útil cuando se trata de realizar operaciones repetitivas sobre un conjunto de datos conocido.</p>
+
+<p><strong>Función (calcularArea):</strong></p>
+
+<ul>
+    <li><strong>Descripción:</strong> La función calcularArea se encarga de calcular el área de un triángulo utilizando la fórmula de Herón de manera iterativa.</li>
+    <li><strong>Ubicación:</strong> Esta función está definida en el archivo script.js.</li>
+    <li><strong>Funcionamiento:</strong> Realiza un bucle para calcular el semiperímetro del triángulo y luego utiliza la fórmula de Herón para calcular el área.</li>
+</ul>
+
+<p><strong>Función Recursiva:</strong> La función recursiva se llama a sí misma para resolver subproblemas más pequeños hasta llegar a un caso base. Este enfoque es útil cuando la solución de un problema se puede expresar en términos de problemas más pequeños de la misma naturaleza.</p>
+
+<p><strong>Función (calcularMediana):</strong></p>
+
+<ul>
+    <li><strong>Descripción:</strong> La función calcularMediana implementa el cálculo de la mediana de los perímetros de manera recursiva.</li>
+    <li><strong>Ubicación:</strong> También está definida en el archivo script.js.</li>
+    <li><strong>Funcionamiento:</strong> Divide el array de perímetros en subarrays más pequeños hasta que se alcanza un caso base. Luego, calcula la mediana recursivamente en los subarrays más pequeños.</li>
+</ul>
+
+<h2>Resumen de la Complejidad Espacial y Temporal algorítmica en el programa:</h2>
+
+<p><strong>Complejidad Temporal:</strong> La complejidad temporal de las funciones iterativas y recursivas depende del algoritmo utilizado y del tamaño de los datos de entrada. En general, la complejidad temporal se expresa en términos de O(n) para operaciones lineales, O(n log n) para algoritmos de ordenamiento eficientes como QuickSort, y O(2^n) para algoritmos recursivos exponenciales.</p>
+
+<p><strong>Complejidad Espacial:</strong> La complejidad espacial se refiere a la cantidad de memoria utilizada por el algoritmo en función del tamaño de los datos de entrada. En general, la complejidad espacial se expresa en términos de O(1) para operaciones que utilizan una cantidad constante de memoria, O(n) para algoritmos lineales que utilizan memoria proporcional al tamaño de los datos de entrada, y O(log n) para algoritmos recursivos que utilizan memoria en la pila de llamadas.</p>
+
+<h2>Estructuras de Datos y Objetos</h2>
+
+<p>El programa utiliza principalmente arrays para almacenar datos, como las medidas de los lados de las figuras y los resultados de los cálculos. Además, utiliza objetos DOM para acceder y manipular elementos HTML en la interfaz de usuario.</p>
+
+<h3>Arrays para Almacenar Datos:</h3>
+
+<p>El programa utiliza arrays para almacenar diferentes tipos de datos, como las medidas de los lados de las figuras y los resultados de los cálculos.</p>
+
+<p>Por ejemplo, los lados de un triángulo se almacenan en un array para poder realizar cálculos sobre ellos. Estos arrays se utilizan para determinar propiedades de las figuras, como el tipo de triángulo o el cálculo de áreas y perímetros.</p>
+
+<p>Además, se utilizan arrays para mantener un historial de cálculos, como el historial de áreas y perímetros calculados. Estos historiales se actualizan dinámicamente a medida que se realizan nuevos cálculos y se muestran en la interfaz de usuario para referencia del usuario.</p>
+
+<h3>Objetos DOM para Manipular la Interfaz de Usuario:</h3>
+
+<p>El programa utiliza objetos DOM (Document Object Model) para acceder y manipular elementos HTML en la interfaz de usuario.</p>
+
+<p>Por ejemplo, los valores ingresados por el usuario en los campos de entrada se obtienen utilizando métodos como document.getElementById() para acceder a los elementos HTML correspondientes.</p>
+
+<p>Luego, estos valores se utilizan para realizar cálculos y actualizar la interfaz de usuario con los resultados utilizando métodos como innerText para mostrar los resultados en elementos HTML específicos.</p>
+
+<p>Además, se utilizan objetos DOM para manejar eventos, como hacer clic en un botón para enviar un formulario o borrar datos. Esto se logra mediante el uso de métodos como addEventListener() para asignar funciones que se ejecutarán cuando ocurra un evento específico.</p>
+
+<h2>Bibliotecas Externas</h2>
+
+<p>El programa hace uso de las siguientes bibliotecas externas:</p>
+
+<ul>
+    <li><strong>D3.js:</strong> Utilizada para manipular y visualizar datos en documentos basados en estándares web, como SVG y HTML.</li>
+    <li><strong>Three.js:</strong> Utilizada para crear y mostrar gráficos en un lienzo HTML5.</li>
+</ul>
+
+<p>Estas bibliotecas se utilizan para crear y renderizar las figuras geométricas en el lienzo de la interfaz de usuario.</p>
+
+<h2>Especificaciones adicionales sobre la construcción del proyecto</h2>
+
+<p>El proyecto de la Calculadora de Figuras Geométricas está compuesto por una aplicación web y una aplicación de escritorio.</p>
+
+<h3>Aplicación Web:</h3>
+
+<p><strong>Herramientas Utilizadas:</strong> La versión web de la calculadora está desarrollada utilizando Vite, que es un entorno de desarrollo para aplicaciones web modernas que utiliza tecnologías como Vue.js o React.js. También hace uso de bibliotecas como D3.js y Three.js para la visualización de figuras en el lienzo 3D, así como FontAwesome para iconos.</p>
+
+<p><strong>Estructura del Proyecto:</strong> La estructura del proyecto web incluye archivos HTML, CSS y JavaScript. La lógica principal se encuentra en el archivo script.js, donde se gestionan las interacciones del usuario y se realizan cálculos basados en los datos de entrada. El archivo shapes.js define funciones para dibujar diferentes figuras geométricas en el lienzo 3D.</p>
+
+<p><strong>Interfaz de Usuario:</strong> La interfaz de usuario está diseñada utilizando HTML y CSS, con estilos adicionales proporcionados por un archivo styles.css. Se utilizan elementos HTML como formularios, botones y listas para interactuar con el usuario y mostrar resultados.</p>
+
+<h3>Aplicación de Escritorio:</h3>
+
+<p><strong>Herramientas Utilizadas:</strong> La versión de escritorio del programa está desarrollada utilizando Electron, que es un framework que permite crear aplicaciones de escritorio multiplataforma utilizando tecnologías web como HTML, CSS y JavaScript.</p>
+
+<p><strong>Estructura del Proyecto:</strong> La estructura del proyecto de escritorio es similar a la de la versión web, pero adaptada para funcionar como una aplicación de escritorio independiente. Se incluyen archivos HTML, CSS y JavaScript, así como archivos de configuración específicos de Electron.</p>
+
+<p><strong>Interfaz de Usuario:</strong> La interfaz de usuario en la versión de escritorio es similar a la versión web, pero adaptada para una experiencia de escritorio. Utiliza los mismos elementos HTML y estilos CSS, pero puede tener ajustes adicionales para mejorar la experiencia del usuario en un entorno de escritorio.</p>
+
+<p>En resumen, el proyecto de la Calculadora de Figuras Geométricas está desarrollado utilizando tecnologías web modernas como Vite y Electron, junto con bibliotecas y herramientas adicionales para la visualización de figuras y la creación de interfaces de usuario interactivas tanto en la web como en el escritorio.</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Hecho por Emil Moquete 22-0969 para Análisis de Algoritmos.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

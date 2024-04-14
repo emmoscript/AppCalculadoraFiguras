@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Figuras Geométricas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://kit.fontawesome.com/7f337c1dde.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" onclick="mostrarCalculadora()"><i class="fas fa-calculator"></i> Calculadora</a></li>
+            <li><a href="pages/docs.html" onclick="mostrarDocumentacion()"><i class="fas fa-book"></i> Documentación</a></li>
+            <li><a href="pages/manual.html" onclick="mostrarManual()"><i class="fas fa-user"></i> Manual del usuario</a></li>
+        </ul>
+    </nav>
+    
+    <!-- CONTAINER -->
+    <div class="container">
+        <h1>Calculadora de Figuras Geométricas</h1>
+        <p class="instructions">Ingrese los lados del triángulo o las medidas de los lados de las figuras geométricas. Luego haga clic en "Calcular". Nota: El dibujo de la figura está escalado en píxeles, por lo que el intervalo adecuado para poder apreciar la figura a la perfección se encuentra entre <b>0 - 200 píxeles</b>.</p>
+        <form id="shapeForm">
+            <label for="lado1">Lado 1:</label>
+            <input type="number" id="lado1" required>
+            <label for="lado2">Lado 2:</label>
+            <input type="number" id="lado2" required>
+            <label for="lado3">Lado 3:</label>
+            <input type="number" id="lado3" required>
+            <button type="submit">Calcular</button>
+        </form>
+        <main>
+            <div id="container3D">
+                <canvas id="figure-canvas" width="300" height="300"></canvas>
+            </div>
+          </main>
+        <div id="resultado"></div>
+        
+        <div id="historial" class="historial">
+            <h2>Historial de Cálculos</h2>
+            <ul id="historialList"></ul>
+        </div>
+        <div class="options">
+            <button id="borrarBtn">Borrar</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Hecho por Emil Moquete 22-0969 para Análisis de Algoritmos.</p>
+    </footer>
+    <script type="module" src="js/shapes.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
